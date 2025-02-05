@@ -26,3 +26,6 @@
 .item.active{
     background-color: khaki;
 }
+table.highlight > tbody > tr:hover{
+    background-color: khaki;
+}
