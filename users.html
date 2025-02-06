@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" href="src/pic/2.png">
     <link rel="stylesheet" href="/src/materialize/css/materialize.min.css">
+    <!-- <link rel="stylesheet" href="/src/materialize/css/materialize-rtl.css"> -->
     <link rel="stylesheet" href="/src/css/util.css">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link rel="stylesheet" href="/src/css/style.css">
@@ -88,6 +89,22 @@
                     </div>
                 </div>
             </li>
+            <!-- <li class="item">
+                <div class="collapsible-header">
+                <i class="arrow material-icons brown-text">arrow_drop_down_circle</i>
+                Elham Emarati
+                </div>
+                <div class="collapsible-body">
+                <div class="p-all-5">
+                <span class="f-bold">Username :</span>
+                <span>elhamemarati</span>
+                </div>
+                <div class="p-all-5">
+                <span class="f-bold">Email :</span>
+                <span>elham.emaraty@gmail.com</span>
+                </div>
+                </div>
+            </li> -->
         </ul>
         <div class="hide-on-med-and-down show-on-medline-and-up">
             <table class="striped centered highlight container m-t-50">
@@ -116,9 +133,71 @@
                         </td>
                     </tr>
                 </tbody>
+                <!-- <tbody>
+                    <tr>
+                    <td>2</td>
+                    <td>Elham Emarati</td>
+                    <td>@elhamemarati</td>
+                    <td>elham.emaraty@gmail.com</td>
+                    <td>@elham.emaraty</td>
+                    <td>009158304138</td>
+                    <td>
+                        <i class="material-icons red-text m-l-5 m-r-5">delete_forever</i>
+                        <i class="material-icons orange-text m-l-5 m-r-5">edit</i>
+                    </td>
+                    </tr>
+                </tbody> -->
             </table>
         </div>
+        <div class="pagination_container container p-l-10 p-r-10 p-t-15 p-b-10 pos-fixed left-0 right-0 bottom-0 flex-sb-m z-depth-3">
+            <div class="counts flex-l p-l-10 flex-l-m">
+            Showing
+            <span class="m-l-5 m-r-5 max-w-50">
+            <input type="number" class="brown-text no-border center-align m-b-0" value="2"/></span>
+            Of
+            <span class="brown-text m-l-5 m-r-5">2</span>
+            </div>
+            <div class="pagination_btn container p-l-10 p-r-10 p-t-15 p-b-10 pos-fixed left-0 right-0 bottom-0 flex-r">
+            <i class="material-icons brown white-text m-l-5 m-r-5 p-l-5 p-r-5 p-t-1 p-b-3 waves-effect waves-light r-pill">keyboard_arrow_left</i>
+            <i class="material-icons brown white-text m-l-5 m-r-5 p-l-5 p-r-5 p-t-1 p-b-3 waves-effect waves-light r-pill">keyboard_arrow_right</i>
+            </div>
+            </div>
     </section>
+    <div class="modal-back dis-none"></div>
+        <div class="user-modal container trans-0-1">
+            <div class="row p-t-10 p-b-10 p-r-40 p-l-40 center-on-small-only">
+                <h5>
+                    <i class="material-icons m-r-15 m-l-10 pos-relative top-4 ">person_add</i>
+                    Add User
+                </h5>
+                <form>
+                    <div class="input-field col s12">
+                        <input id="name" type="text" class="validate"/>
+                        <label for="name">Name</label>
+                    </div>
+                    <div class="input-field col s12">
+                        <input id="uname" type="text" class="validate"/>
+                        <label for="uname">Telegram Username</label>
+                    </div>
+                    <div class="input-field col s12">
+                        <input id="email" type="text" class="validate"/>
+                        <label for="email">Email</label>
+                    </div>
+                <!-- <div class="input-field col s12">
+                    <input id="insta" type="text" class="validate"/>
+                    <label for="insta">ID Instagram</label>
+                </div> -->
+                    <div class="input-field col s12">
+                        <input id="wom" type="number" class="validate"/>
+                        <label for="wom">Whatsapp or Mobile</label>
+                    </div>
+                    <button type="button" class="waves-effect waves-light btn brown m-t-20 m-b-20 w-full max-w-250 r-pill">
+                        Submit
+                    </button>
+                </form>
+            </div>
+        </div>
+    
 
     <script src="/src/materialize/js/materialize.js"></script>
     <script src="/src/js/user.js"></script>
